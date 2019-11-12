@@ -2,10 +2,11 @@ import pandas as pd
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 
+
 def main():
     print("Program: Column Delete")
-    print("Release: 0.1.0")
-    print("Date: 2019-08-30")
+    print("Release: 0.1.1")
+    print("Date: 2019-11-12")
     print("Author: Brian Neely")
     print()
     print()
@@ -202,6 +203,7 @@ def open_unknown_csv(file_in, delimination):
 
     return data
 
+
 def open_file(file_in, encoder, delimination):
     try:
         data = pd.read_csv(file_in, low_memory=False, encoding=encoder, delimiter=delimination)
@@ -211,6 +213,7 @@ def open_file(file_in, encoder, delimination):
         print("Encoder Error for: " + encoder)
         return "Encode Error"
     return data
+
 
 if __name__ == '__main__':
     main()
