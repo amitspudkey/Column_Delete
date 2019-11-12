@@ -5,7 +5,7 @@ from tkinter.filedialog import askopenfilename, asksaveasfilename
 
 def main():
     print("Program: Column Delete")
-    print("Release: 0.1.1")
+    print("Release: 0.1.2")
     print("Date: 2019-11-12")
     print("Author: Brian Neely")
     print()
